@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: url(drinks.jpg);
+}
+
+h2 {
+  font-weight: bold;
+  text-shadow: 2px 1px #b3b3b3;
+}
+
+p {
+  font-weight: bold;
+  text-shadow: 2px 1px #b3b3b3;
+}
+
+.header {
+  background-image: url(drinks.jpg);
+  padding: 20px;
+  text-align: center;
+  color: #ffd000;
+  text-shadow: 2px 2px #333;
+}
+
+.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav li {float: left;}
+
+.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav li a:hover:not(.active) {background-color: #111;}
+
+.topnav li a.active {background-color: #ffd51a; color: #333;} 
+
+.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  .topnav li.right, 
+  .topnav li {float: none;}
+}
+
+.column {
+  float: left;
+  padding: 15px;
+}
+
+.column.sidel {
+    text-align: left;
+    width: 25%;
+}
+
+.column.sider {
+    text-align: right;
+    width: 25%;
+}
+
+.column.middle{
+    text-align: center;
+    width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width:600px) {
+  .column.sidel, .column.sider, .column.middle {
+      text-align: center;
+      width: 100%;
+  }
+}
+
+.footer {
+  background-image: url(drinks.jpg);      
+  padding: 10px;
+  text-align: center;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top-style: solid;
+  border-top-width: 10px;
+  border-top-color: #333;
+  color: #333;
+}
+
+.list {
+  color: #006600;                 
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.button {
+  background-color: #ffd51a;   
+  border: solid;
+  border-color: #333;
+  border-width: 2px;
+  color: #333;
+  padding: 13px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+}
+
