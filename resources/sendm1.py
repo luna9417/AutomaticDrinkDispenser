@@ -30,5 +30,5 @@ while True:
     two.off()
     one.off()
     zero.on()
-    sleep(2)
+    sleep(5)
     exit()
